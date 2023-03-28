@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECCF"
+    tools:context=".OtherProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDB242"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionModeTheme"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/leftarrow" />
+
+
+            <TextView
+                android:id="@+id/bookToolName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="BookName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/text_button"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/backArrow"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Book"
+        android:textSize="24dp"
+        android:textColor="@color/text_button"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:gravity="center"
+
+
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/book_bg"
+        android:orientation="horizontal">
+
+
+    <ImageView android:layout_height="65dp"
+        android:layout_width="65dp"
+        android:layout_gravity="center"
+        android:id="@+id/bookPic"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/book"></ImageView>
+
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:text="Book name"
+                android:textColor="@color/text_button"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:text="Author"
+                android:textColor="@color/hint_text"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="289dp"
+        android:text="Owner"
+        android:textSize="24dp"
+        android:textColor="@color/text_button"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:gravity="center"
+
+
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/book_bg"
+        android:orientation="horizontal"
+       >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="@color/text_button"
+            app:civ_border_width="2dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="name"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/text_button"
+                android:textSize="30sp" />
+            <TextView
+            android:id="@+id/userPhone"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="phone"
+            android:textColor="@color/text_button"
+            android:textSize="15sp" />
+            <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="email"
+            android:textColor="@color/text_button"
+            android:textSize="15sp" />
+
+
+            </LinearLayout>
+        <ImageView android:layout_height="55dp"
+            android:layout_width="65dp"
+            android:layout_gravity="center"
+            android:id="@+id/chatPic"
+            app:srcCompat="@drawable/chat"></ImageView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

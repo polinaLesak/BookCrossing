@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@android:color/white"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textColor="@color/text_button"
+            android:textColorHint="@color/hint_text"
+            android:textSize="20sp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="#0056d3"
+            app:met_primaryColor="#982360"
+            app:met_errorColor="#ddaa00"
+            app:met_floatingLabelText="User email"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColor="@color/text_button"
+            android:textColorHint="@color/hint_text"
+            android:textSize="20sp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="#0056d3"
+            app:met_primaryColor="#982360"
+            app:met_errorColor="#ddaa00"
+            app:met_floatingLabelText="User Password"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

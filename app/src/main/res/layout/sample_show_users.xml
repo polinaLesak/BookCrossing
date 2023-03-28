@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="100dp"
+
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/text_button"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userNameList"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Name Surname"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/text_button"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lastMessage"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="No messages yet"
+            android:textColor="@color/hint_text"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

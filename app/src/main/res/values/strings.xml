@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">bookCrossing</string>
+    <string name="turn">Button</string>
+    <string name="button_text">Нажми</string>
+    <string name="app_in_name">BookCrossing</string>
+    <string name="regist">Registration</string>
+    <string name="enter">Log In</string>
+    <string name="profile"> Profile</string>
+    <string name="list"> Books</string>
+    <string name="chat"> Chats</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enterMessage">Enter your message</string>
+</resources>

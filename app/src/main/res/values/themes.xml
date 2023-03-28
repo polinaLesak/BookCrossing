@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BookCrossing" parent="Theme.Design.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FDB242</item>
+        <item name="colorPrimaryVariant">#FDB242</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/text_button</item>
+        <item name="colorSecondaryVariant">@color/text_button</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#FDB242</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
